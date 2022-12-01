@@ -1,8 +1,7 @@
-import java.io.File
+package com.github.sashjakk
 
 fun main() {
-    val input = File("src/main/resources/Day10.txt")
-        .readLines()
+    val input = readLines("Day10.txt")
 
     fun Char.isOpen() = this in listOf('(', '{', '[', '<')
     fun Char.isClose() = this in listOf(')', '}', ']', '>')

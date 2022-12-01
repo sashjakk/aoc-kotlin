@@ -1,8 +1,7 @@
-import java.io.File
+package com.github.sashjakk
 
 fun main() {
-    val input = File("src/main/resources/Day04.txt")
-        .readLines()
+    val input = readLines("Day04.txt")
 
     data class Cell(val row: Int, val column: Int, val value: Int, var marked: Boolean = false)
 

@@ -1,8 +1,7 @@
-import java.io.File
+package com.github.sashjakk
 
 fun main() {
-    val input = File("src/main/resources/Day08.txt")
-        .readLines()
+    val input = readLines("Day08.txt")
 
     fun part1(input: List<String>) = input
         .map { it.split(" | ").last() }

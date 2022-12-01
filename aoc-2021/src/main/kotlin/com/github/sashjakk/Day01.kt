@@ -1,8 +1,7 @@
-import java.io.File
+package com.github.sashjakk
 
 fun main() {
-    val input = File("src/main/resources/Day01.txt")
-        .readLines()
+    val input = readLines("Day01.txt")
         .map(String::toInt)
 
     val result1 = input

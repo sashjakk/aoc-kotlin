@@ -1,8 +1,7 @@
-import java.io.File
+package com.github.sashjakk
 
 fun main() {
-    val input = File("src/main/resources/Day06.txt")
-        .readText()
+    val input = readText("Day06.txt")
         .split(',')
         .map { it.toInt() }
 

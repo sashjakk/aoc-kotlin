@@ -1,9 +1,9 @@
-import java.io.File
+package com.github.sashjakk
+
 import kotlin.math.abs
 
 fun main() {
-    val input = File("src/main/resources/Day07.txt")
-        .readText()
+    val input = readText("Day07.txt")
         .split(',')
         .map { it.toInt() }
 

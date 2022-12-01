@@ -1,9 +1,7 @@
-import java.io.File
+package com.github.sashjakk
 
 fun main() {
-    val input = File("src/main/resources/Day09.txt")
-        .readLines()
-
+    val input = readLines("Day09.txt")
     val rows = input.size
     val columns = input.first().length
 
