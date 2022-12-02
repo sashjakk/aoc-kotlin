@@ -10,7 +10,7 @@ fun main() {
     println("2nd - $result2")
 }
 
-fun part1(entries: List<String>): Int {
+private fun part1(entries: List<String>): Int {
     var max = Int.MIN_VALUE
     var sum = 0
 
@@ -27,7 +27,7 @@ fun part1(entries: List<String>): Int {
     return max
 }
 
-fun part2(entries: List<String>): Int {
+private fun part2(entries: List<String>): Int {
     return entries
         .bufferWhile { it.isNotBlank() }
         .map { it.sumOf(String::toInt) }
@@ -36,7 +36,7 @@ fun part2(entries: List<String>): Int {
         .sum()
 }
 
-fun <T> List<T>.bufferWhile(predicate: (T) -> Boolean): List<List<T>> {
+private fun <T> List<T>.bufferWhile(predicate: (T) -> Boolean): List<List<T>> {
     val groups = mutableListOf<List<T>>()
     var current = mutableListOf<T>()
 
