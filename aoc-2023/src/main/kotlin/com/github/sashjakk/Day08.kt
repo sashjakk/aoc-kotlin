@@ -76,5 +76,5 @@ fun main() {
         start = { it.endsWith('A') },
         end = { it.endsWith('Z') }
     )
-    println("[Day 07 / 2 - $time2] - $result2")
+    println("[Day 08 / 2 - $time2] - $result2")
 }
